@@ -14,9 +14,9 @@ function Upper(name){
 
 function myFilter(array,callback) {
     var list = [];
-    for(a in array){
-        if(callback(array[a])){
-            list.push(array[a]);
+    for(i in array){
+        if(callback(array[i])){
+            list.push(array[i]);
         }
     }
     return list;
@@ -25,8 +25,8 @@ function myFilter(array,callback) {
 
 function myMap(array,callback) {
     var list = [];
-    for(a in array){
-        list.push(callback(array[a]))
+    for(i in array){
+        list.push(callback(array[i]))
     }
     return list;
 

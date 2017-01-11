@@ -9,11 +9,11 @@ for(var type in person){
 }
 console.log("")
 // test if the Aids property exists
-console.log(person.hasOwnProperty("Aids"));
+console.log("does he have aids? " + person.hasOwnProperty("Aids"));
 //delete Aids
 delete person.Aids;
 //test if the Aids property still exists
-console.log(person.hasOwnProperty("Aids"));
+console.log("does he still have aids? " + person.hasOwnProperty("Aids"));
 console.log("")
 
 //type out everything again to check
@@ -33,5 +33,3 @@ function infoPrint(p){
     }
 }
 infoPrint(createPerson("Marco","Blum",24))
-
-console.log("\nobject.3 \n")
